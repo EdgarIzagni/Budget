@@ -1,0 +1,21 @@
+<form class="input" (ngSubmit) = "onAgregar()" autocomplete="off">
+	<select name="op" class="input__options" #value>
+		<option value="i">Ingresos</option>
+		<option value="e">Egresos</option>
+	</select>
+	<input 
+		type="number" 
+		name="mnt" 
+		placeholder="Monto" 
+		class="input__mnt" 
+		#mnt 
+	>
+	<input 
+		type="text" 
+		name="desc" 
+		placeholder="Agregar descripción" 
+		class="input__desc" 
+		#desc 
+	>
+	<button class="input__btn" type="submit"> ✔ </button>
+</form>

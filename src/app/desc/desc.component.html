@@ -1,0 +1,22 @@
+<div class="desc">
+	<section class="desc__icome">
+		<h2 class="icome__title">Ingresos</h2>
+		<div *ngFor="let icome of icomes; let i=index">
+			<p class="result"> 
+				 <span class="result__desc"> {{icome.getDesc()}} </span>  
+				 <span class="result__mnt"> {{icome.getMnt()| currency:'PEN':'S/':'1.2-2'}} </span>
+				 <button class="btn" (click) = "onDeleteIcome(icome)" >X</button>
+			</p>
+		</div>
+	</section>
+	<section class="desc__expenses">
+		<h2 class="expenses__title">Egresos</h2>
+		<div *ngFor="let expense of expenses">
+			<p class="result"> 
+				 <span class="result__desc"> {{expense.getDesc()}} </span>  
+				 <span class="result__mnt"> {{expense.getMnt()| currency:'PEN':'S/':'1.2-2'}} </span>
+				 <button class="btn__e" (click) = "onDeleteExpense(expense)">X</button>
+			</p>
+		</div>
+	</section>
+</div>

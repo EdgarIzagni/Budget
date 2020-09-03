@@ -1,0 +1,78 @@
+.desc {
+	width: 100%;
+	display: grid;
+	gap: 10px;
+	padding: 20px;
+}
+
+
+.desc__icome{
+	color:#2E14EF;
+	box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.3);
+	background-color: #fff;
+	padding: 20px;
+}
+
+
+.desc__expenses {
+	color: #FF3D09;
+	box-shadow: 5px 5px 10px -5px rgba(0,0,0,0.3);
+	background-color: #fff;
+	padding: 20px;
+}
+
+
+.icome__title,
+.expenses__title{
+	margin-bottom: 20px;
+}
+
+
+.result {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+
+.result__mnt {
+	text-align: right;
+}
+
+
+.result__desc{
+	color: #000;
+}
+
+
+.btn,
+.btn__e{
+	margin-left: 10px;
+	border-radius: 50%;
+	width: 60px;
+	height: 30px;
+	border: 1px solid #2E14EF;
+	background-color: transparent;
+}
+
+
+.btn__e{
+  border-color: #FF3D09;
+}
+
+
+@media screen and (min-width: 720px){
+	.desc{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media  screen and (min-width: 1200px) {
+	.btn:hover,
+	.btn__e:hover{
+		cursor: pointer;
+	}
+}
