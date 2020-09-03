@@ -19,7 +19,7 @@ export class InputComponent implements OnInit {
       let text = new RegExp('([ ]*[a-z]+){1,}','g');
       let number =  new RegExp('[ ]*[1-9]+[.]*[,]*[1-9]+')
 
-      if(text.test(this.op.nativeElement.value) && number.test(this.mnt.nativeElement.value)) {
+      if(text.test(this.desc.nativeElement.value) && number.test(this.mnt.nativeElement.value)) {
   		  if(this.op.nativeElement.value == "i"){
   			  this.data.addIcome(parseFloat(this.mnt.nativeElement.value),this.desc.nativeElement.value)
   		  }else {
