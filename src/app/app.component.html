@@ -1,11 +1,3 @@
-<section class="statistics">
-  <p class="budget">Presupuesto disponible</p>
-  <p class="result">{{(icomeTotal() - expensesTotal()) | currency:'PEN':'S/':'1.2-2'}} </p>
-  <p class="result-icome">Ingresos: </p>
-  <p class="result-icome__number">{{icomeTotal() | currency:'PEN':'S/':'1.2-2'}}</p> 
-  <p class="result-expenses">Egresos: </p> 
-  <p class="result-expenses__number">{{expensesTotal() | currency:'PEN':'S/':'1.2-2'}} </p>
-  <p class="result-expenses__percentage"> {{porcentaje() | percent}}  </p>
-</section>
+<app-header></app-header>
 <app-input></app-input>
 <app-desc></app-desc>

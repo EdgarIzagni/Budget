@@ -4,13 +4,15 @@ import { FormsModule } from '@angular/forms'
 import { AppComponent } from './app.component';
 import { InputComponent } from './input/input.component';
 import { DescComponent } from './desc/desc.component';
-import { Data } from '../data.service'
+import { Data } from '../data.service';
+import { HeaderComponent } from './header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     InputComponent,
-    DescComponent
+    DescComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
